@@ -1,0 +1,16 @@
+<div class="container">
+  <game-control (evenNumberEvent)="onEvenNumber($event)" (oddNumberEvent)="onOddNumber($event)" style='margin: 40px;' class="text-center"></game-control>
+
+  <div class="row text-center">
+    <div class="col-xs-6">
+      <h5>Odd</h5>
+      <app-odd *ngFor="let num of odd" [odd]="num"></app-odd>
+    </div>
+    <div class="col-xs-6">
+      <h5>Even</h5>
+      <app-even *ngFor="let num of even" [even]="num"></app-even>
+    </div>
+  </div>
+
+
+</div>
